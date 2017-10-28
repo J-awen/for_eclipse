@@ -5,7 +5,7 @@
     <artifactId>spring</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>spring-jta</artifactId>
-  <name>spring-jta</name>
-  <description>spring-jta</description>
+  <artifactId>spring-aop</artifactId>
+  <name>springaop</name>
+  <description>springaop</description>
 </project>
