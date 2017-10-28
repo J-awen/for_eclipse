@@ -2,10 +2,12 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.awen</groupId>
-    <artifactId>spring</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>spring-top</artifactId>
+    <version>0.0.1</version>
   </parent>
   <artifactId>spring-jta</artifactId>
   <name>spring-jta</name>
   <description>spring-jta</description>
+  <version>0.0.1-SNAPSHOT</version>
+  <groupId>com.awen.jta</groupId>
 </project>

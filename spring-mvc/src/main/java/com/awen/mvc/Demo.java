@@ -1,4 +1,4 @@
-package com.awen;
+package com.awen.mvc;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
