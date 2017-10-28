@@ -2,10 +2,12 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.awen</groupId>
-    <artifactId>spring</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>spring-top</artifactId>
+    <version>0.0.1</version>
   </parent>
   <artifactId>spring-aop</artifactId>
   <name>springaop</name>
   <description>springaop</description>
+  <groupId>com.awen.aop</groupId>
+  <version>0.0.1</version>
 </project>

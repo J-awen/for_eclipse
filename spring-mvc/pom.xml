@@ -22,7 +22,7 @@
 		<dependency>
 			<groupId>com.awen.jta</groupId>
 			<artifactId>spring-jta</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 		</dependency>
 	</dependencies>
 
@@ -48,5 +48,5 @@
 			</plugin>
 		</plugins>
 	</build>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 </project>
