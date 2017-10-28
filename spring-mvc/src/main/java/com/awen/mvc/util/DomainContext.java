@@ -1,4 +1,4 @@
-package com.awen.util;
+package com.awen.mvc.util;
 
 import org.springframework.stereotype.Service;
 

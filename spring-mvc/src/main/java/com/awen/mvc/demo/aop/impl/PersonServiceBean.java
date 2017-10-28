@@ -1,6 +1,6 @@
-package com.awen.demo.aop.impl;
+package com.awen.mvc.demo.aop.impl;
 
-import com.awen.demo.aop.PersonServer;
+import com.awen.mvc.demo.aop.PersonServer;
 
 public class PersonServiceBean implements PersonServer {
 

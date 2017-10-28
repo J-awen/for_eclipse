@@ -1,4 +1,4 @@
-package com.awen.util;
+package com.awen.mvc.util;
 
 public class ItfSupport implements Itf {
 

@@ -1,4 +1,4 @@
-package com.awen.web;
+package com.awen.mvc.web;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -16,10 +16,10 @@ import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import com.awen.util.AppContext;
-import com.awen.util.AppContext2;
-import com.awen.util.DomainContext;
-import com.awen.util.DomainFactory;
+import com.awen.mvc.util.AppContext;
+import com.awen.mvc.util.AppContext2;
+import com.awen.mvc.util.DomainContext;
+import com.awen.mvc.util.DomainFactory;
 
 @Controller
 @RequestMapping("/user")

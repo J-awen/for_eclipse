@@ -1,4 +1,4 @@
-package com.awen.demo.aop;
+package com.awen.mvc.demo.aop;
 
 public interface PersonServer {
 

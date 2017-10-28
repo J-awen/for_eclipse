@@ -1,4 +1,4 @@
-package com.awen.util;
+package com.awen.mvc.util;
 
 public interface Itf {
 	static ItfSupport test = new ItfSupport();

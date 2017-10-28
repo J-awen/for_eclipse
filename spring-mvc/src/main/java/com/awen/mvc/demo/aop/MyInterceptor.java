@@ -1,4 +1,4 @@
-package com.awen.demo.aop;
+package com.awen.mvc.demo.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
