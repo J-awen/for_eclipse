@@ -1,11 +1,11 @@
-package springmvc;
+
 
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.awen.util.DomainContext;
-import com.awen.util.DomainFactory;
+import com.awen.mvc.util.DomainContext;
+import com.awen.mvc.util.DomainFactory;
 
 public class TestUtil {
 	

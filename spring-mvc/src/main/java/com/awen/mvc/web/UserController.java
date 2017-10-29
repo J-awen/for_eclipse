@@ -59,6 +59,7 @@ public class UserController implements ApplicationContextAware {
 		HttpServletRequest req = this.getRequest();
 		HttpSession session = req.getSession();
 		session.setAttribute("name", "wangwenping");
+		domainFactory.print();
 		return "main";
 	}
 
