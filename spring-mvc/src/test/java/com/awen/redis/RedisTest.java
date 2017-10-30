@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.test.context.ContextConfiguration;
 
@@ -25,6 +26,7 @@ public class RedisTest {
 		// stringRedisTemplate的操作
 		// String读写
 		ApplicationContext context = new ClassPathXmlApplicationContext(new String[] { "applicationContext-redis.xml" });
+		JedisConnectionFactory connectionFactory = (JedisConnectionFactory) context.getBean("connectionFactory");
 		RedisTemplate redisTemplate = (RedisTemplate) context.getBean("redisTemplate");
 		UserDaoImpl userDao = (UserDaoImpl) context.getBean("userDaoImpl");
 		redisTemplate.delete("myStr");
