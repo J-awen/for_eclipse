@@ -9,6 +9,6 @@
 	<artifactId>spring-jta</artifactId>
 	<name>spring-jta</name>
 	<description>spring-jta</description>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<groupId>com.awen.jta</groupId>
 </project>
