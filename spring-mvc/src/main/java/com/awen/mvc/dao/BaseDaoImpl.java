@@ -9,7 +9,7 @@ import java.util.List;
 import javax.sql.DataSource;
 
 public abstract class BaseDaoImpl<T> implements BaseDao<T> {
-	
+
 	private DataSource dataSource;
 
 	@Override
@@ -23,7 +23,7 @@ public abstract class BaseDaoImpl<T> implements BaseDao<T> {
 			Connection conn = dataSource.getConnection();
 			Statement st = conn.createStatement();
 			ResultSet rs = st.executeQuery("select * from user");
-			while(rs.next()) {
+			while (rs.next()) {
 				rs.getString("name");
 			}
 			rs.close();
@@ -32,7 +32,12 @@ public abstract class BaseDaoImpl<T> implements BaseDao<T> {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
+		return null;
+	}
+
+	@Override
+	public List<T> find(T t) {
 		return null;
 	}
 
@@ -45,19 +50,19 @@ public abstract class BaseDaoImpl<T> implements BaseDao<T> {
 	@Override
 	public void delete(Long id) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void update(Long id) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void insert(T t) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
