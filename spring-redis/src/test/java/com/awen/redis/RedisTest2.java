@@ -27,7 +27,7 @@ public class RedisTest2 {
 	public void testAddUser() {
 		try {
 			Thread.sleep(1000);
-			Class<?> caller = Reflection.getCallerClass();
+			// Class<?> caller = Reflection.getCallerClass();
 			Class<?> ageClass = Class.forName("");
 			ClassLoader.getSystemClassLoader().loadClass("Age");
 		} catch (NoClassDefFoundError e) {
