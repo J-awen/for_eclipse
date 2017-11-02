@@ -8,13 +8,10 @@
 			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:property-placeholder location="classpath:redis.properties" />
+	<context:property-placeholder location="classpath*:redis.properties" />
 
 	<bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">
 		<property name="maxIdle" value="${redis.maxIdle}" />
-		<property name="maxActive" value="${redis.maxActive}" />
-		<property name="maxWait" value="${redis.maxWait}" />
-		<property name="testOnBorrow" value="${redis.testOnBorrow}" />
 	</bean>
 
 	<bean id="connectionFactory"
@@ -23,8 +20,9 @@
 		p:pool-config-ref="poolConfig" />
 
 	<bean id="redisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+		<!-- <property name=""/> -->
 		<property name="connectionFactory" ref="connectionFactory" />
 	</bean>
 
-	<bean id="userDao" class="com.x.dao.impl.UserDao" />
+	<bean id="userDao" class="com.awen.redis.dao.UserDao" />
 </beans>

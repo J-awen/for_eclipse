@@ -7,6 +7,8 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
@@ -31,6 +33,8 @@ public class RedisTest extends AbstractJUnit4SpringContextTests {
 	 */
 	@Test
 	public void testAddUser() {
+		// ApplicationContext context = new ClassPathXmlApplicationContext(new String[] { "applicationContext.xml" });
+		// IUserDao userDao = (IUserDao) context.getBean("userDao");
 		User user = new User();
 		user.setId("user1");
 		user.setName("java2000_wl");
